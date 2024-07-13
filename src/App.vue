@@ -1,18 +1,23 @@
 <template>
   <div id="app">
-    <index></index>
+    <router-view></router-view>
   </div>
 </template>
-
 <script>
-import index from './components/index'
-
 export default {
   name: 'App',
-  components: {
-    index
-  }
 }
 </script>
 
-<style></style>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 隐藏所有滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+</style>
+  
